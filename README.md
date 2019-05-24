@@ -1,4 +1,4 @@
-# 🎨 Prefers reduced motion
+# 🙅 Prefers reduced motion
 
 [![Travis CI](https://img.shields.io/travis/AnandChowdhary/prefers-reduced-motion.svg)](https://travis-ci.org/AnandChowdhary/prefers-reduced-motion)
 [![Coverage Status](https://coveralls.io/repos/github/AnandChowdhary/prefers-reduced-motion/badge.svg?branch=master)](https://coveralls.io/github/AnandChowdhary/prefers-reduced-motion?branch=master)
