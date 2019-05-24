@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta name="charset" content="utf-8">
-        <title>prefers-color-scheme</title>
+        <title>prefers-reduced-motion</title>
         <style>
             body { font: menu; font-size: 100%; text-align: center; max-width: 720px; margin: 2rem auto; padding: 2rem; }
             body.light { background-color: #ecf0f1; color: #000 }
@@ -10,11 +10,11 @@
         </style>
     </head>
     <body>
-        <h1>Your color scheme is <strong id="colorScheme">loading...</strong>.</h1>
+        <h1>Your motion preference is <strong id="motionPreference">loading...</strong>.</h1>
         <script type="module">
-            import prefersColorScheme from "https://unpkg.com/prefers-color-scheme";
-            document.querySelector("#colorScheme").innerHTML = prefersColorScheme();
-            document.body.classList.add(prefersColorScheme());
+            import prefersReducedMotion from "https://unpkg.com/prefers-reduced-motion";
+            document.querySelector("#motionPreference").innerHTML = prefersReducedMotion();
+            document.body.classList.add(prefersReducedMotion());
         </script>
     </body>
 </html>

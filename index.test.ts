@@ -1,13 +1,13 @@
-import prefersColorScheme from "./index";
+import prefersReducedMotion from "./index";
 
 test("should be a string", () => {
-  expect(typeof prefersColorScheme()).toBe("string");
+  expect(typeof prefersReducedMotion()).toBe("string");
 });
 
-test("should be dark or light", () => {
-  expect(["dark", "light"].includes(prefersColorScheme())).toBeTruthy();
+test("should be reduce or no-preference", () => {
+  expect(["reduce", "no-preference"].includes(prefersReducedMotion())).toBeTruthy();
 });
 
-test("should be dark, light, or unknown", () => {
-  expect(["dark", "light", "unknown"].includes(prefersColorScheme())).toBeTruthy();
+test("should be reduce, no-preference, or unknown", () => {
+  expect(["reduce", "no-preference", "unknown"].includes(prefersReducedMotion())).toBeTruthy();
 });

@@ -1,14 +1,14 @@
 {
-  "name": "prefers-color-scheme",
-  "version": "1.0.1",
-  "description": "Get a user's preferred color scheme using CSS @media prefers-color-scheme",
+  "name": "prefers-reduced-motion",
+  "version": "1.0.0",
+  "description": "Get a user's motion preference using CSS @media prefers-reduced-motion",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "repository": "git@github.com:AnandChowdhary/prefers-color-scheme.git",
+  "repository": "git@github.com:AnandChowdhary/prefers-reduced-motion.git",
   "author": "Anand Chowdhary <mail@anandchowdhary.com>",
   "license": "MIT",
   "scripts": {
