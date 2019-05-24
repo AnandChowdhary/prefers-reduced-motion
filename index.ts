@@ -1,4 +1,4 @@
-export default (fallbackToLight: Boolean = true) => {
+export default (fallbackToNone: Boolean = true) => {
   const testId = `test_${Math.random()
     .toString(36)
     .substring(2)}`;
@@ -11,14 +11,14 @@ export default (fallbackToLight: Boolean = true) => {
     html {
         content: "";
     }
-    @media (prefers-color-scheme: light) {
+    @media (prefers-reduced-motion: reduce) {
       html {
-        content: "light";
+        content: "reduce";
       }
     }
-    @media (prefers-color-scheme: dark) {
+    @media (prefers-reduced-motion: no-preference) {
       html {
-        content: "dark";
+        content: "no-preference";
       }
     }
   `;
@@ -35,7 +35,7 @@ export default (fallbackToLight: Boolean = true) => {
   const value =
     getComputedStyle(document.documentElement)
       .getPropertyValue("content")
-      .replace(/"/g, "") || (fallbackToLight ? "light" : "unknown");
+      .replace(/"/g, "") || (fallbackToNone ? "no-preference" : "unknown");
 
   // Remove appended items from the DOM
   if (testElement.parentNode) {
